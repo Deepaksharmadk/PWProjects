@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #5a5a5a;
+}
+img{
+cursor: pointer;
+}
+.flex-div{
+    display: flex;
+    align-items: center;
+}
+nav{
+    padding: 10px 2%;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+.nav-right img{
+    width: 25px;
+    margin-right: 25px;
+}
+.user-icon{
+    width: 35px;
+    border-radius: 50%;
+    margin-right: 0px;
+}
+.nav-left .menu-icon{
+width: 22px;
+margin-right: 25px;
+}
+.nav-left .logo{
+    width: 133px;
+}
+.nav-middle  .mic-icon{
+    width: 16px;
+}
+.nav-middle .seaech-box{
+    border: 1px solid #cccccc;
+    margin-right: 15px;
+    padding: 8px 12px;
+    border-radius: 25px;
+}
+.nav-middle .seaech-box input{
+    width: 400px;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+}
+.nav-middle .seaech-box img{
+    width: 15px;
+}
+/* -------------------sidebar------------------ */
+.sidebar{
+    background-color: #ffffff;
+    width: 15%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    padding-left: 2%;
+    padding-top: 80px;
+}
+.shortcut-links a img{
+width: 20px;
+margin-right: 20px;
+}
+.shortcut-links a {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: fit-content;
+    flex-wrap: wrap;
+}
+.shortcut-links a:first-child{
+    color: hsl(0, 100%, 50%);
+}
+.sidebar hr{
+ border: 0;
+ height: 1px;
+ background-color: #cccccc;
+ width: 85%;   
+}
+.subsribed-list h3{
+font-size: 13px;
+margin: 20px 0;
+color: #5a5a5a;
+}
+.subsribed-list a{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;    
+    width: fit-content;
+    flex-wrap: wrap;
+}
+.subsribed-list a img{
+    width: 25px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.smallside-op{
+    width: 5%;
+
+}
+.smallside-op a p{
+    display: none;
+}
+.smallside-op h3{
+    display: none;
+}
+.smallside-op hr{
+    width: 50%;
+    margin-bottom: 25px;
+}
+/* ----------------------main------------------- */
+.container{
+    background-color: #f9f9f9;
+    padding-left: 17%;
+    padding-right: 2%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+.banner{
+    width: 100%;
+}
+.banner img{
+    width: 100%;
+    border-radius: 8px;
+}
