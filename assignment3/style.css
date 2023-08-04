@@ -1,0 +1,98 @@
+:root {
+   --PurpleDeoColor: #b90ec5;
+   --whiteDeoColor: #ffffff;
+   --blackDeoColor: #000000;
+   --grayDeoColor: rgb(173, 173, 173);
+}
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body {
+   background-image: url(./image/bg.png);
+   object-fit: cover;
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: cover;
+   min-height: 100vh;
+   font-family: "Poppins", sans-serif;
+}
+header {
+   background-color: var(--blackDeoColor);
+   padding: 15px 7%;
+}
+nav {
+   display: grid;
+   grid-template-columns: 1fr 4fr 3fr;
+   align-items: center;
+   justify-content: center;
+}
+.logo {
+   border-right: 1px Solid var(--grayDeoColor);
+}
+.logo img {
+   width: 110px;
+}
+nav ul {
+   list-style: none;
+
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+}
+nav ul li a {
+   color: var(--whiteDeoColor);
+   text-decoration: none;
+   font-size: 16px;
+   font-weight: 500px;
+   position: relative;
+   transition: 0.5s;
+}
+
+a::before {
+   content: "";
+   position: absolute;
+   width: 0;
+   height: 3px;
+   border-radius: 4px;
+   background-color: var(--PurpleDeoColor);
+   bottom: -5px;
+   left: 0;
+}
+a:hover::before{
+width: 100%;
+}
+
+
+.navBtns {
+   justify-self: flex-end;
+}
+button {
+   padding: 10px 25px;
+   color: var(--whiteDeoColor);
+   background-color: var(--PurpleDeoColor);
+   font-size: 14px;
+   font-weight: 700;
+   border: none;
+   border-radius: 5px;
+   cursor: pointer;
+  
+}
+
+.heroSection {
+   display: grid;
+   place-items: center;
+
+   text-align: center;
+   height: 80vh;
+   color: white;
+}
+.heroSection h1 {
+   font-size: 4rem;
+}
+.heroSection p {
+   font-size: 24px;
+   margin-bottom: 30px;
+   font-weight: 600;
+}
